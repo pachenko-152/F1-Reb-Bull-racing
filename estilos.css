@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    background-image: url('RED BULL.jpg'); 
+    background-color: #0a122a; /* Color de fondo  */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(10, 25, 47, 0.85); /* Fondo semitransparente para leer mejor */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+header,
+main,
+footer {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #f9d342; 
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 2.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+.featured-car img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    margin: 1rem auto;
+    display: block;
+}
+
+/* --- ESTILOS PARA LA GALERÍA --- */
+.gallery-section h2 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    object-fit: cover; 
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px rgba(249, 211, 66, 0.7);
+}
+/* --- FIN DE ESTILOS PARA LA GALERÍA --- */
+
+.extra-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9rem;
+
+
+    box-shadow: 0 0 15px rgba(249, 211, 66, 0.7);
+}
+
+/* --- Estilos para el Video --- */
+.video-container {
+    margin: 2.5rem auto; 
+    max-width: 800px; 
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.video-container video {
+    width: 100%; 
+    height: auto;
+    display: block; 
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+
+    border-radius: 10px;
+}
+
+/* --- Estilos para el Video --- */
+.video-container {
+    margin: 2.5rem auto; 
+    display: block; 
+}
+
+.video-section h3 {
+    margin-top: 3rem;
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.9rem;
+}
+
+/*---link deredes sociales--*/
+.social-links {
+    margin-bottom: 1rem; 
+}
+
+.social-links a {
+    margin: 0 10px; 
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    filter: invert(90%) sepia(25%) saturate(400%) hue-rotate(350deg)
+     brightness(105%) contrast(95%); 
+}
+
+.social-links a:hover {
+    transform: scale(1.15); 
+}
+

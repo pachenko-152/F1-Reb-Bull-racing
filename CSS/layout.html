@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout en html y css</title>
+    <link rel="stylesheet" href="./css/layout.css">
+</head>
+<body>
+    <header><h1>Introducción a los Layout CSS</h1></header>
+    <main class="layouts-container">
+    
+    <section class="layout-block">
+        <h2>Display Block</h2>
+        <ul>
+            <li>El contenido del elemento toma el 100% del width</li>
+            <li>Se puede usar margin y padding por todos los lados</li>
+            <li>La mayoría de las etiquetas vienen por Default con un <b>display:block</b></li>
+        </ul>
+        <div>Bloque 1</div>
+        <div>Bloque 2</div>
+        <div>Bloque 3</div>
+    </section>
+
+    <section class="layout-inline">
+        <h2>Display inline</h2>
+        <ul>
+            <li>Cada caja ocupa un espacio</li>
+            <li>No puedo usar margin, ni padding arriba ni abajo, solo a la derecha e izquierda.</li>
+            <li>Tampoco se puede aplicar width o height.</li>
+            <li>Etiquetas como <b>span</b> viene por Default con un display:inline</li>
+        </ul>
+        <div>Bloque 1</div>
+        <div>Bloque 2</div>
+        <div>Bloque 3</div>
+    </section>
+
+    <section class="layout-inline-block">
+        <h2>Display inline block</h2>
+        <ul>
+            <li>Puede usar margin y padding por todos lados</li>
+            <li>Puedo definir un width y height</li>
+            <li>El contenido es del mismo tamaño</li>
+        </ul>
+        <div>Bloque 1</div>
+        <div>Bloque 2</div>
+        <div>Bloque 3</div>
+    </section>
+
+    <h2>Display Flex</h2>
+    <ul>
+        <li>Dirección: row, column, reverse</li>
+        <li>justificación: alineación horizontal del contenido</li>
+        <li>alineación: alineación vertical de los items del contenido</li>
+        <li>contenedor: comportamiento del contenedor</li>
+    </ul>
+    <section class="layout-flex">
+        <div>Bloque 1</div>
+        <div>Bloque 2</div>
+        <div>Bloque 3</div>
+        <div>Bloque 4</div>
+        <div>Bloque 5</div>
+        <div>Bloque 6</div>
+    </section>
+    <!-- Generador de Layouts en Display Flex -->
+     <a href="https://cssflex-generator.netlify.app/" target="_blank">css flex generator</a>
+    
+     <h2>Display Grid</h2>
+    <ul>
+        <li>Definir columnas: grid-templates-columns</li>
+        <li>Definir filas: grid-templates-rows</li>
+        <li>Definir espaciados: gap</li>
+        <li>Justificación del contenido:<br>
+            justify-content start | center | end | stretch | space-around | space-evenly | space-between
+            <br>
+            justify-items start | center | end | stretch
+        </li>
+        <li>Alineación del contenido:<br>
+            align-content start | center | end | stretch | space-around | space-evenly | space-between
+            align-items start | center | end | stretch</li>
+    </ul>
+    <section class="layout-grid">
+        <div>Bloque 1</div>
+        <div>Bloque 2</div>
+        <div>Bloque 3</div>
+        <div>Bloque 4</div>
+        <div>Bloque 5</div>
+        <div>Bloque 6</div>
+    </section>
+
+    <!-- Generador de Layouts en Display Flex -->
+     <a href="https://cssgrid-generator.netlify.app/" target="_blank">css grid generator</a>
+
+    </main>
+    <footer><small>Fuba Imagen digital IV</small></footer>
+</body>
+</html>
